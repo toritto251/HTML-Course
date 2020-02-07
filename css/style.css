@@ -1,10 +1,96 @@
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
+  color: #494F7C;
+}
+
+h1, h2, h3, h4, h6,
+.h1, .h2, .h3, .h4, .h6 {
+  color: #0C1451;
+}
+
+h5,
+.h5 {
+  color: #FE9B8E;
 }
 
 p,
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
+}  
+
+
+/* Sections */
+.section-xs {
+  padding: 30px 0; 
 }
+
+.section-md {
+  padding: 100px 0;
+}
+
+
+/* Context */
+.context-dark,
+.context-dark h1, .context-dark h2, .context-dark h3, .context-dark h4, .context-dark h5, .context-dark h6,
+.context-dark .h1, .context-dark .h2, .context-dark .h3, .context-dark .h4, .context-dark .h5, .context-dark .h6 {
+  color: #fff;
+} 
+
+
+/* Backgrounds */
+.bg-primary {
+  background-color: #0C1451 !important;
+}
+
+.bg-primary-light {
+  background-color: #0B1455;
+}
+
+.bg-secondary {
+  background-color: #FE9B8E !important;
+}
+
+.bg-secondary-light {
+  background-color: #FEEBE8;
+}
+
+
+/* Offsets */
+* + h6,
+* + .h6 {
+  margin-top: 14px;
+}
+
+* + .row {
+  margin-top: 60px;
+}
+
+
+/* Spacing */
+.row-30 {
+  margin-bottom: -30px;
+}
+
+.row-30 > [class*='col-'] {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  .row-xxl-50 {
+    margin-bottom: -50px;
+  }
+  
+  .row-xxl-50 > [class*='col-'] {
+    margin-bottom: 50px;
+  }
+}
+
+
+/* Box Colors */
+.box-color {
+  padding-bottom: 100%;
+}
+
+
