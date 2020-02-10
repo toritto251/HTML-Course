@@ -2,7 +2,15 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   color: #494F7C;
+  line-height: 1.46;
 }
+
+@media (min-width: 1400px) {
+  body {
+   font-size: 18px;
+  }
+}
+
 
 h1, h2, h3, h4, h6,
 .h1, .h2, .h3, .h4, .h6 {
@@ -18,7 +26,55 @@ p,
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
-}  
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  color: #0C1451;
+}
+
+h1,
+.h1 {
+  font-size: 80px;
+  line-height: 1.1;
+}
+
+h2,
+.h2 {
+  font-size: 60px;
+  line-height: 110%;
+}
+
+h3,
+.h3 {
+  font-size: 50px;
+  line-height: 110%;
+}
+
+h4,
+.h4 {
+  font-size: 32px;
+  line-height: 116%;
+}
+
+h5,
+.h5 {
+  font-size: 26px;
+  line-height: 146%;
+  color: #FE9B8E;
+}
+
+h6,
+.h6 {
+  font-size: 22px;
+  line-height: 146%;
+}
+
+.big {
+  font-size: 22px;
+  line-height: 1.46;
+}
 
 
 /* Sections */
@@ -56,8 +112,45 @@ h1, h2, h3, h4, h5, h6,
   background-color: #FEEBE8;
 }
 
+.bg-text-color {
+  background-color: #494F7C;
+}
+
 
 /* Offsets */
+* + p {
+  margin-top: 30px;
+}
+
+* + .big {
+  margin-top: 40px;
+}
+
+* + h1,
+* + .h1 {
+  margin-top: 20px;
+}
+
+* + h2,
+* + .h2 {
+  margin-top: 20px;
+}
+
+* + h3,
+* + .h3 {
+  margin-top: 20px;
+}
+
+* + h4,
+* + .h4 {
+  margin-top: 20px;
+}
+
+* + h5,
+* + .h5 {
+  margin-top: 20px;
+}
+
 * + h6,
 * + .h6 {
   margin-top: 14px;
@@ -88,9 +181,38 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-/* Box Colors */
-.box-color {
-  padding-bottom: 100%;
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 6px 10px 16px rgba(11, 20, 85, 0.12);
 }
+
+.btn-sm {
+  font-size: 18px;
+  padding: 16px 25px;
+}
+
+.btn-lg {
+  font-size: 22px;
+}
+
+.group-50 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -50px;
+  margin-bottom: -50px;
+}
+
+.group-50 > * {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+
 
 
