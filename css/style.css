@@ -11,6 +11,10 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 
 h1, h2, h3, h4, h6,
 .h1, .h2, .h3, .h4, .h6 {
@@ -186,6 +190,7 @@ h6,
   border-radius: 8px;
   font-size: 20px;
   line-height: 1.2;
+  padding: 23px 50px;
   font-weight: 700;
   border: 0;
   box-shadow: 6px 10px 16px rgba(11, 20, 85, 0.12);
@@ -197,7 +202,25 @@ h6,
 }
 
 .btn-lg {
+  padding: 27px 65px;
   font-size: 22px;
+}
+
+.btn-primary {
+  background-color: #0B1455;
+}
+
+.btn-secondary {
+  background-color: #FE9B8E;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.btn-white:hover {
+  background-color: grey;
+  color: white;
 }
 
 .group-50 {
@@ -213,6 +236,28 @@ h6,
   margin-bottom: 50px;
 }
 
+h3+.group-50 {
+  margin-top: 30px;
+}
+
+/* Box Colors */
+.box-color {
+  padding-bottom: 100%;
+}
 
 
+/* Header */
+.navbar-brand img {
+  width: 215px;
+  height: auto;
+}
 
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Sections */
+/* Intro */
+.section-intro {
+  padding: 150px 0;
+}
