@@ -80,6 +80,11 @@ h6,
   line-height: 1.46;
 }
 
+/* Colors */
+
+.color-secondary{
+  color: #FE9B8E;
+}
 
 /* Sections */
 .section-xs {
@@ -137,6 +142,13 @@ h6,
   background-color: #494F7C;
 }
 
+.bg-secondary-grey {
+  background-color: #FAFBFC;
+}
+
+.bg-primary-grey {
+  background: #E5E5E5;
+}
 
 /* Offsets */
 * + p {
@@ -190,6 +202,14 @@ h6,
 .row-30 > [class*='col-'] {
   margin-bottom: 30px;
 }
+.row-140 {
+  margin-bottom: -140px;
+}
+
+.row-140 > [class*='col-'] {
+  margin-bottom: 140px;
+}
+
 
 @media (min-width: 1400px) {
   .row-xxl-50 {
@@ -308,4 +328,104 @@ h3+.group-50 {
 
 .tel + p {
   margin-top: 24px;
+}
+
+/* Testimonials */
+
+* + .testimonials__logo {
+  margin-top: 42px;
+}
+
+
+.testimonials__content{
+  padding: 61px 60px 53px 70px;
+  margin-top: 12px;
+  box-shadow: 0px 14px 20px rgba(11, 20, 85, 0.1);
+  border-radius: 8px;
+}
+
+.testimonials__content + p {
+  margin-top: 34px;
+}
+
+
+/* hr */
+
+hr{
+  height: 3px;
+  background: #0B1455;
+  margin: 0;
+  padding: 0;
+}
+
+/* spa */
+
+* + .spa__btn{
+  margin-top: 78px;
+}
+
+/* price */
+
+.price{
+  background-image: url(../images/bg-price.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 605px;
+}
+
+.price__content h3{
+  margin: 0;
+}
+
+* + .price__btn{
+  margin-top: 57px;
+}
+
+.price__btn:hover{
+  background-color: #FE9B8E;
+}
+
+/* gift */
+
+.gift__content{
+  background: white;
+  box-shadow: 0px 14px 20px rgba(11, 20, 85, 0.1);  
+  border-radius: 8px;
+  padding: 51px 45px 61px 44px;
+}
+
+.gift__content:hover {
+  background: #0B1455;
+}
+
+.gift__content:hover > h3 {
+  color: white;
+}
+
+.gift__content:hover > p {
+  color: white;
+}
+
+.gift__content:hover > .btn-secondary {
+  background: white;
+  color: #0C1451;
+}
+
+.gift__btn{
+  margin-top: 50px;
+}
+
+/* therapy */
+
+.therapy{
+  padding-top: 100px;
+}
+
+* + .therapy__btn{
+  margin-top: 80px;
+}
+
+.therapy img{
+  margin-top: 60px;
 }
